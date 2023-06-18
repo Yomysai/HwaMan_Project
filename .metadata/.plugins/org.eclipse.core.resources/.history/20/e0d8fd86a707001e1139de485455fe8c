@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package fr.freestyle.hawman.Service;
+
+/**
+ * @author aly_d
+ *
+ */
+public class UserService {
+
+}

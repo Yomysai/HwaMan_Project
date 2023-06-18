@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package fr.freestyle.hawman.Controller;
+
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * @author aly_d
+ *
+ */
+@RestController
+public class RoleController {
+
+}

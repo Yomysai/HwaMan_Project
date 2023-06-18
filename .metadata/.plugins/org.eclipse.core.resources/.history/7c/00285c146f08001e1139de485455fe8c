@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package fr.freestyle.hawman.Controller;
+
+import org.springframework.stereotype.Service;
+
+/**
+ * @author aly_d
+ *
+ */
+@Service
+public class RoleController {
+
+}

@@ -1,0 +1,27 @@
+/**
+ * 
+ */
+package fr.freestyle.hawman.Bean;
+
+/**
+ * @author aly_d
+ *
+ */
+@Entity
+@Table(name = "image")
+public class Image {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "image_id")
+    private Long imageId;
+
+    @ManyToOne
+    @JoinColumn(name = "item_id", nullable = false)
+    private Item item;
+
+    @Column(name = "image_url", nullable = false)
+    private String imageUrl;
+
+    // Getters and Setters
+}
+

@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package fr.freestyle.hawman.Bean;
+
+/**
+ * @author aly_d
+ *
+ */
+public class Page {
+
+}

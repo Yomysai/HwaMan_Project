@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "6816cbdaabfa8e65",
+    "type": "split",
+    "children": [
+      {
+        "id": "ea82c40dad7e5732",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "861e025e4660dc0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HwaMan Bibliothèque Virtuelle  Readme.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "4ade9da32b9b4966",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Conception/document/figma/Descriptions.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ac3c2dc1e4b2bd8b",
+    "type": "split",
+    "children": [
+      {
+        "id": "7df7a2b94f5ccb98",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "217d7088e72597cb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "389bff62ab172918",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8d92e81f662488c5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "92a9cc9c51054847",
+    "type": "split",
+    "children": [
+      {
+        "id": "9c08973e2e20e726",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a3241b19dc0db212",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Conception/document/figma/Descriptions.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f3abd15e91ce1d84",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Conception/document/figma/Descriptions.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "839e21d743e267ca",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "def6e3d6d91e1bb5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Conception/document/figma/Descriptions.md"
+              }
+            }
+          },
+          {
+            "id": "39d073ca14b3fdca",
+            "type": "leaf",
+            "state": {
+              "type": "graph-analysis",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false,
+      "audio-recorder:Démarrer / arrêter l'enregistrement": false,
+      "markdown-importer:Ouvrir l'importateur Markdown": false,
+      "omnisearch:Omnisearch": false,
+      "meld-encrypt:Create new encrypted note": false,
+      "open-vscode:VSCode": false,
+      "obsidian-textgenerator-plugin:Generate Text!": false,
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
+      "obsidian-translator:Translate": false
+    }
+  },
+  "active": "4ade9da32b9b4966",
+  "lastOpenFiles": [
+    "Conception/document/MCD/assets/Spring_hawman_conceptuel 2023-06-10 03.png",
+    "Conception/document/MCD/assets/uml_hawman_2023-06-12_07.png",
+    "Conception/document/Use_Case/USE CASE.canvas",
+    "Conception/document/Use_Case/hwa-man_use_case action.png",
+    "Conception/Architecture.md",
+    "Conception/document/MCD/assets/hawman_2023-06-12_04.png",
+    "Conception/document/MCD/assets/HAW_MAN_2023_06_09_01.png",
+    "Conception/document/MCD/assets/CARDINALITER_ 2023-06-12_05.png",
+    "Conception/document/MCD/assets/analyseSI_hawman2023-06-12_08.png",
+    "Conception/document/MCD/diagramme 📊  UML/Diagramme de sequence.md",
+    "Conception/document/MCD/diagramme 📊  UML/Diagramme de déploiement.md",
+    "Conception/document/MCD/diagramme 📊  UML/Diagramme de composant.md",
+    "Conception/document/MCD/diagramme 📊  UML/Diagramme de communication.md",
+    "Conception/document/MCD/diagramme 📊  UML/Diagramme d'activiter.md",
+    "Conception/document/MCD/diagramme 📊  UML/Diagramme all.md",
+    "Conception/document/Use_Case/Use case.md",
+    "Conception/document/Use_Case/cas d'utilisation.md",
+    "Conception/Cahier des charges - Projet Hwa-Man.md",
+    "Architecture HWA_MAN.md",
+    "FRONT/front_hawman/src/Component/Acceuill",
+    "FRONT/front_hawman/src/Component",
+    "BACK/hwaman/hwaman/target/classes/fr/BakaWord/hwaman/ConfigurationSecurity",
+    "BACK/hwaman/hwaman/src/main/java/fr/BakaWord/hwaman/ConfigurationSecurity",
+    "BACK/hwaman/hwaman/target/classes/fr/BakaWord/hwaman/Bean",
+    "BACK/hwaman/hwaman/src/main/java/fr/BakaWord/hwaman/Bean",
+    "BACK/hwaman/hwaman/target/classes/fr/BakaWord/hwaman/Repository",
+    "BACK/hwaman/hwaman/src/main/java/fr/BakaWord/hwaman/Repository",
+    "BACK/hwaman/hwaman/target/classes/fr/BakaWord/hwaman/Service",
+    "BACK/hwaman/hwaman/src/main/java/fr/BakaWord/hwaman/Service",
+    "BACK/hwaman/hwaman/HELP.md",
+    "HwaMan Bibliothèque Virtuelle  Readme.md",
+    "BACK/hwaman/HELP.md",
+    "Conception/document/MCD/assets/MPD_hawman_2023-06-10_03.png",
+    "Conception/document/MCD/assets/MCD_hawman_2023-06-10_01.png",
+    "Conception/document/MCD/assets/fab2023-06-13 094951.png",
+    "Conception/document/Conseil/RESSOURCES DE BASE d/Diagramme de conception conceptuelle.md",
+    "Conception/L'Élaboration du MCD ( projet Hwa-Man !).md",
+    "Conception/document/MCD/Identification Les entités principales et secondaires.md",
+    "Conception/document/MCD/Identification Les entités principales.md",
+    "Conception/document/MCD/Relations entre les entités.md",
+    "Conception/document/MCD/Dictionnaire.md",
+    "Conception/document/MCD/Définition des attributs.md",
+    "Conception/document/MCD/diagramme 📊  UML/Diagramme de conception conceptuelle.md",
+    "Conception/document/MCD/diagramme 📊  UML/Diagramme de communication 1.md",
+    "Conception/document/Conseil/RESSOURCES DE BASE d/Diagramme de conception conceptuelle 1 1.md",
+    "Conception/document/Conseil/RESSOURCES DE BASE d/Diagramme de conception conceptuelle 1.md",
+    "document/Use_Case/USE CASE.canvas"
+  ]
+}

@@ -1,0 +1,67 @@
+/**
+ * 
+ */
+package fr.freestyle.hawman.Controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import fr.freestyle.hawman.Bean.Role;
+import fr.freestyle.hawman.Repository.RoleRepository;
+
+/**
+ * @author aly_d
+ *
+ */
+@RestController
+@CrossOrigin(origins = "http://localhost:3000")
+public class RoleController {
+
+    @Autowired
+    private RoleRepository roleRepository;
+
+    // Opération de lecture (Read) - GET /roles
+    @GetMapping("/roles")
+    public List<Role> getAllRoles() {
+        return roleRepository.findAll();
+    }
+
+    // Opération de création (Create) - POST /roles
+    @PostMapping("/roles")
+    public Role createRole(@RequestBody Role role) {
+        return roleRepository.save(role);
+    }
+
+    // Opération de mise à jour (Update) - PUT /roles/{id}
+    @PutMapping("/roles/{id}")
+    public Role updateRole(@PathVariable Long id, @RequestBody Role roleDetails) {
+        Role role = roleRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Role", "id", id));
+
+        role.setName(roleDetails.getName());
+        // Ajoutez d'autres propriétés à mettre à jour si nécessaire
+
+        return roleRepository.save(role);
+    }
+
+    // Opération de suppression (Delete) - DELETE /roles/{id}
+    @DeleteMapping("/roles/{id}")
+    public ResponseEntity<?> deleteRole(@PathVariable Long id) {
+        Role role = roleRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Role", "id", id));
+
+        roleRepository.delete(role);
+
+        return ResponseEntity.ok().build();
+    }
+}

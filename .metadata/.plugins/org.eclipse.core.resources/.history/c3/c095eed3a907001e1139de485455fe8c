@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package fr.freestyle.hawman.Repository;
+
+/**
+ * @author aly_d
+ *
+ */
+public interface RoleService {
+
+}

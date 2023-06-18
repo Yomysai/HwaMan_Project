@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package fr.freestyle.hawman.Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import fr.freestyle.hawman.Bean.Users;
+import fr.freestyle.hawman.Controller.Role;
+
+/**
+ * @author aly_d
+ *
+ */
+public interface RoleService extends JpaRepository<Role, Integer> {
+
+	fr.freestyle.hawman.Bean.Role getRoleByName(String roleName);
+
+}

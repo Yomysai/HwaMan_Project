@@ -1,0 +1,20 @@
+[
+  [
+    {
+      "role": "user",
+      "content": "error in component \"const HeaderComponent =pluinginInternalNoteHeaderComponent ;<HeaderComponent/>: error: dv.page only handles string and link pahts; was provided type 'indefined'\n"
+    }
+  ],
+  [
+    {
+      "role": "user",
+      "content": "peut tu resoude \n"
+    }
+  ],
+  [
+    {
+      "role": "user",
+      "content": "bonjour\n\n"
+    }
+  ]
+]

@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package fr.freestyle.hawman.Repository;
+
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import fr.freestyle.hawman.Bean.Users;
+
+/**
+ * @author aly_d
+ *
+ */
+public interface UserRepository extends JpaRepository<Users, Integer> {
+
+	Optional<Users> findById(Long userId);
+
+	Users findByEmail(String mail);
+
+}

@@ -1,0 +1,94 @@
+/**
+ * 
+ */
+package fr.freestyle.hawman.Controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import fr.freestyle.hawman.Bean.Role;
+import fr.freestyle.hawman.Bean.Users;
+import fr.freestyle.hawman.Repository.RoleService;
+import fr.freestyle.hawman.Service.UserService;
+
+/**
+ * @author aly_d
+ *
+ */
+@RestController
+@RequestMapping("/users")
+@CrossOrigin(origins = "http://localhost:3000")
+public class UserController {
+    private final UserService userService;
+    private final RoleService roleService;
+
+    public UserController(UserService userService, RoleService roleService) {
+        this.userService = userService;
+        this.roleService = roleService;
+    }
+
+    @PostMapping("/create")
+    public ResponseEntity<Users> createUser(@RequestBody Users user) {
+        Users createdUser = userService.createUser(user);
+        return ResponseEntity.ok(createdUser);
+    }
+
+    @PostMapping("/create-with-role")
+    public ResponseEntity<Users> createUserWithRole(@RequestBody Users user, @RequestParam("role") String roleName) {
+        Role role = roleService.getRoleByName(roleName);
+        if (role == null) {
+            // Gérer le cas où le rôle spécifié n'existe pas
+            return ResponseEntity.badRequest().build();
+        }
+        user.getRoles().add(role);
+        Users createdUser = userService.createUser(user);
+        return ResponseEntity.ok(createdUser);
+    }
+
+    @GetMapping("/{userId}")
+    public ResponseEntity<Users> getUserById(@PathVariable("userId") Long userId) {
+        Users user = userService.getUserById(userId);
+        if (user == null) {
+            // Gérer le cas où l'utilisateur n'existe pas
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(user);
+    }
+
+    @PutMapping("/{userId}")
+    public ResponseEntity<Users> updateUser(@PathVariable("userId") Long userId, @RequestBody User updatedUser) {
+        Users user = userService.getUserById(userId);
+        if (user == null) {
+            // Gérer le cas où l'utilisateur n'existe pas
+            return ResponseEntity.notFound().build();
+        }
+        user.setUsername(updatedUser.getUsername());
+        user.setPassword(updatedUser.getPassword());
+        user.setEmail(updatedUser.getEmail());
+        // Mettre à jour d'autres attributs selon les besoins
+        Users updated = userService.updateUser(user);
+        return ResponseEntity.ok(updated);
+    }
+
+    @DeleteMapping("/{userId}")
+    public ResponseEntity<Void> deleteUser(@PathVariable("userId") Long userId) {
+        Users user = userService.getUserById(userId);
+        if (user == null) {
+            // Gérer le cas où l'utilisateur n'existe pas
+            return ResponseEntity.notFound().build();
+        }
+        userService.deleteUser(user);
+        return ResponseEntity.noContent().build();
+    }
+}
+
+

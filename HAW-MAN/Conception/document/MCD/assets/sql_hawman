@@ -1,0 +1,172 @@
+DROP TABLE IF EXISTS User ;
+CREATE TABLE User (user_id INT AUTO_INCREMENT NOT NULL,
+username VARCHAR,
+password VARCHAR,
+email VARCHAR,
+PRIMARY KEY (user_id)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS Role ;
+CREATE TABLE Role (role_id_Role INT AUTO_INCREMENT NOT NULL,
+role_name_User VARCHAR,
+PRIMARY KEY (role_id_Role)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS Teams ;
+CREATE TABLE Teams (group_id_Teams INT AUTO_INCREMENT NOT NULL,
+group_name VARCHAR,
+PRIMARY KEY (group_id_Teams)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS Items ;
+CREATE TABLE Items (item_id INT AUTO_INCREMENT NOT NULL,
+title VARCHAR,
+author_User VARCHAR,
+description VARCHAR2,
+cover_image VARCHAR,
+item_type VARCHAR,
+PRIMARY KEY (item_id)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS Mangas ;
+CREATE TABLE Mangas (manga_id INT AUTO_INCREMENT NOT NULL,
+manga_specific_column1 VARCHAR,
+manga_specific_column2 VARCHAR,
+item_id **NOT FOUND**,
+PRIMARY KEY (manga_id)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS UserTeams ;
+CREATE TABLE UserTeams (user_group_id_UserTeams INT AUTO_INCREMENT NOT NULL,
+user_id_UserTeams INT,
+group_id_UserTeams INT,
+PRIMARY KEY (user_group_id_UserTeams)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS UserRoles ;
+CREATE TABLE UserRoles (user_role_id_UserRoles INT AUTO_INCREMENT NOT NULL,
+user_id_UserRoles INT,
+role_id_UserRoles INT,
+PRIMARY KEY (user_role_id_UserRoles)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS Comments ;
+CREATE TABLE Comments (comment_id INT AUTO_INCREMENT NOT NULL,
+item_id **NOT FOUND**,
+item_type_Comments VARCHAR,
+user_id_Comments INT,
+comment_text TEXT,
+created_at TIMESTAMP,
+item_id_AjouterCommentaire **NOT FOUND**,
+PRIMARY KEY (comment_id)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS Books ;
+CREATE TABLE Books (book_id_Books INT AUTO_INCREMENT NOT NULL,
+book_specific_column1 VARCHAR,
+book_specific_column2 VARCHAR,
+item_id **NOT FOUND**,
+PRIMARY KEY (book_id_Books)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS GroupRoles ;
+CREATE TABLE GroupRoles (group_role_id_GroupRoles INT AUTO_INCREMENT NOT NULL,
+group_id_GroupRoles INT,
+role_id_GroupRoles INT,
+PRIMARY KEY (group_role_id_GroupRoles)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS Pages ;
+CREATE TABLE Pages (page_id_Pages INT AUTO_INCREMENT NOT NULL,
+item_id_Pages INT,
+page_number INT,
+content TEXT,
+PRIMARY KEY (page_id_Pages)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS Images ;
+CREATE TABLE Images (image_id_Images INT AUTO_INCREMENT NOT NULL,
+item_id_Images INT,
+image_url_User VARCHAR,
+PRIMARY KEY (image_id_Images)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS Categories ;
+CREATE TABLE Categories (category_id_Categories INT AUTO_INCREMENT NOT NULL,
+item_id_Categories INT,
+category_name VARCHAR,
+PRIMARY KEY (category_id_Categories)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS AssignerRôle ;
+CREATE TABLE AssignerRôle (user_role_id_UserRoles INT AUTO_INCREMENT NOT NULL,
+user_id **NOT FOUND** NOT NULL,
+PRIMARY KEY (user_role_id_UserRoles,
+ user_id)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS AjouterImage ;
+CREATE TABLE AjouterImage (item_id **NOT FOUND** AUTO_INCREMENT NOT NULL,
+image_id_Images **NOT FOUND** NOT NULL,
+PRIMARY KEY (item_id,
+ image_id_Images)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS AjouterCatégorie ;
+CREATE TABLE AjouterCatégorie (item_id **NOT FOUND** AUTO_INCREMENT NOT NULL,
+category_id_Categories **NOT FOUND** NOT NULL,
+PRIMARY KEY (item_id,
+ category_id_Categories)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS AjouterPage ;
+CREATE TABLE AjouterPage (item_id **NOT FOUND** AUTO_INCREMENT NOT NULL,
+page_id_Pages **NOT FOUND** NOT NULL,
+PRIMARY KEY (item_id,
+ page_id_Pages)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS AssignerÉquipe ;
+CREATE TABLE AssignerÉquipe (group_role_id_GroupRoles INT AUTO_INCREMENT NOT NULL,
+role_id_Role **NOT FOUND** NOT NULL,
+PRIMARY KEY (group_role_id_GroupRoles,
+ role_id_Role)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS AffecterRôle ;
+CREATE TABLE AffecterRôle (group_id_Teams **NOT FOUND** AUTO_INCREMENT NOT NULL,
+group_role_id_GroupRoles INT NOT NULL,
+PRIMARY KEY (group_id_Teams,
+ group_role_id_GroupRoles)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS AjouterMembre ;
+CREATE TABLE AjouterMembre (user_group_id_UserTeams INT AUTO_INCREMENT NOT NULL,
+group_id_Teams **NOT FOUND** NOT NULL,
+PRIMARY KEY (user_group_id_UserTeams,
+ group_id_Teams)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS JoindreÉquipe ;
+CREATE TABLE JoindreÉquipe (user_id **NOT FOUND** AUTO_INCREMENT NOT NULL,
+user_group_id_UserTeams INT NOT NULL,
+PRIMARY KEY (user_id,
+ user_group_id_UserTeams)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS Association_59 ;
+CREATE TABLE Association_59 (comment_id **NOT FOUND** AUTO_INCREMENT NOT NULL,
+user_id **NOT FOUND** NOT NULL,
+PRIMARY KEY (comment_id,
+ user_id)) ENGINE=InnoDB;
+
+DROP TABLE IF EXISTS AffecterUtilisateur ;
+CREATE TABLE AffecterUtilisateur (user_role_id_UserRoles INT AUTO_INCREMENT NOT NULL,
+role_id_Role **NOT FOUND** NOT NULL,
+PRIMARY KEY (user_role_id_UserRoles,
+ role_id_Role)) ENGINE=InnoDB;
+
+ALTER TABLE Mangas ADD CONSTRAINT FK_Mangas_item_id FOREIGN KEY (item_id) REFERENCES Items (item_id);
+
+ALTER TABLE Comments ADD CONSTRAINT FK_Comments_item_id FOREIGN KEY (item_id) REFERENCES Items (item_id);
+ALTER TABLE Comments ADD CONSTRAINT FK_Comments_item_id_AjouterCommentaire FOREIGN KEY (item_id_AjouterCommentaire) REFERENCES Items (item_id);
+ALTER TABLE Books ADD CONSTRAINT FK_Books_item_id FOREIGN KEY (item_id) REFERENCES Items (item_id);
+ALTER TABLE AssignerRôle ADD CONSTRAINT FK_AssignerRôle_user_role_id_UserRoles FOREIGN KEY (user_role_id_UserRoles) REFERENCES UserRoles (user_role_id_UserRoles);
+ALTER TABLE AssignerRôle ADD CONSTRAINT FK_AssignerRôle_user_id FOREIGN KEY (user_id) REFERENCES User (user_id);
+ALTER TABLE AjouterImage ADD CONSTRAINT FK_AjouterImage_item_id FOREIGN KEY (item_id) REFERENCES Items (item_id);
+ALTER TABLE AjouterImage ADD CONSTRAINT FK_AjouterImage_image_id_Images FOREIGN KEY (image_id_Images) REFERENCES Images (image_id_Images);
+ALTER TABLE AjouterCatégorie ADD CONSTRAINT FK_AjouterCatégorie_item_id FOREIGN KEY (item_id) REFERENCES Items (item_id);
+ALTER TABLE AjouterCatégorie ADD CONSTRAINT FK_AjouterCatégorie_category_id_Categories FOREIGN KEY (category_id_Categories) REFERENCES Categories (category_id_Categories);
+ALTER TABLE AjouterPage ADD CONSTRAINT FK_AjouterPage_item_id FOREIGN KEY (item_id) REFERENCES Items (item_id);
+ALTER TABLE AjouterPage ADD CONSTRAINT FK_AjouterPage_page_id_Pages FOREIGN KEY (page_id_Pages) REFERENCES Pages (page_id_Pages);
+ALTER TABLE AssignerÉquipe ADD CONSTRAINT FK_AssignerÉquipe_group_role_id_GroupRoles FOREIGN KEY (group_role_id_GroupRoles) REFERENCES GroupRoles (group_role_id_GroupRoles);
+ALTER TABLE AssignerÉquipe ADD CONSTRAINT FK_AssignerÉquipe_role_id_Role FOREIGN KEY (role_id_Role) REFERENCES Role (role_id_Role);
+ALTER TABLE AffecterRôle ADD CONSTRAINT FK_AffecterRôle_group_id_Teams FOREIGN KEY (group_id_Teams) REFERENCES Teams (group_id_Teams);
+ALTER TABLE AffecterRôle ADD CONSTRAINT FK_AffecterRôle_group_role_id_GroupRoles FOREIGN KEY (group_role_id_GroupRoles) REFERENCES GroupRoles (group_role_id_GroupRoles);
+ALTER TABLE AjouterMembre ADD CONSTRAINT FK_AjouterMembre_user_group_id_UserTeams FOREIGN KEY (user_group_id_UserTeams) REFERENCES UserTeams (user_group_id_UserTeams);
+ALTER TABLE AjouterMembre ADD CONSTRAINT FK_AjouterMembre_group_id_Teams FOREIGN KEY (group_id_Teams) REFERENCES Teams (group_id_Teams);
+ALTER TABLE JoindreÉquipe ADD CONSTRAINT FK_JoindreÉquipe_user_id FOREIGN KEY (user_id) REFERENCES User (user_id);
+ALTER TABLE JoindreÉquipe ADD CONSTRAINT FK_JoindreÉquipe_user_group_id_UserTeams FOREIGN KEY (user_group_id_UserTeams) REFERENCES UserTeams (user_group_id_UserTeams);
+ALTER TABLE Association_59 ADD CONSTRAINT FK_Association_59_comment_id FOREIGN KEY (comment_id) REFERENCES Comments (comment_id);
+ALTER TABLE Association_59 ADD CONSTRAINT FK_Association_59_user_id FOREIGN KEY (user_id) REFERENCES User (user_id);
+ALTER TABLE AffecterUtilisateur ADD CONSTRAINT FK_AffecterUtilisateur_user_role_id_UserRoles FOREIGN KEY (user_role_id_UserRoles) REFERENCES UserRoles (user_role_id_UserRoles);
+ALTER TABLE AffecterUtilisateur ADD CONSTRAINT FK_AffecterUtilisateur_role_id_Role FOREIGN KEY (role_id_Role) REFERENCES Role (role_id_Role);
