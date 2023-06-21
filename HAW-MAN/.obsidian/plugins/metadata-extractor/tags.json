@@ -1,5 +1,110 @@
 [
   {
+    "tag": "webpack",
+    "tagCount": 4,
+    "relativePaths": [
+      "FRONT/front_hawman/node_modules/webpack-dev-middleware/README.md",
+      "FRONT/front_hawman/node_modules/webpack-dev-server/README.md",
+      "FRONT/front_hawman/node_modules/webpack/README.md"
+    ]
+  },
+  {
+    "tag": "typescript",
+    "tagCount": 3,
+    "relativePaths": [
+      "FRONT/front_hawman/node_modules/typescript/README.md",
+      "FRONT/front_hawman/node_modules/tsutils/node_modules/tslib/README.md",
+      "FRONT/front_hawman/node_modules/tslib/README.md"
+    ]
+  },
+  {
+    "tag": "name",
+    "tagCount": 2,
+    "relativePaths": [
+      "FRONT/front_hawman/node_modules/terser/node_modules/commander/CHANGELOG.md",
+      "FRONT/front_hawman/node_modules/sucrase/node_modules/commander/CHANGELOG.md"
+    ]
+  },
+  {
+    "tag": "ff0000",
+    "tagCount": 31,
+    "relativePaths": [
+      "FRONT/front_hawman/node_modules/react-dev-utils/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/jest-watcher/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/jest-watch-typeahead/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/jest-validate/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/jest-util/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/jest-snapshot/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/jest-runtime/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/jest-runner/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/jest-resolve/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/jest-message-util/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/jest-matcher-utils/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/jest-jasmine2/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/jest-each/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/jest-diff/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/jest-config/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/jest-cli/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/jest-circus/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/jake/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/fork-ts-checker-webpack-plugin/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/eslint/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/babel-jest/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/@types/jest/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/@testing-library/jest-dom/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/@testing-library/react/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/@testing-library/dom/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/@jest/types/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/@jest/transform/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/@jest/reporters/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/@jest/core/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/@jest/console/node_modules/chalk/readme.md"
+    ]
+  },
+  {
+    "tag": "object-keys",
+    "tagCount": 1,
+    "relativePaths": [
+      "FRONT/front_hawman/node_modules/object-keys/README.md"
+    ]
+  },
+  {
+    "tag": "forgejs",
+    "tagCount": 1,
+    "relativePaths": [
+      "FRONT/front_hawman/node_modules/node-forge/README.md"
+    ]
+  },
+  {
+    "tag": "jsdom",
+    "tagCount": 1,
+    "relativePaths": [
+      "FRONT/front_hawman/node_modules/jsdom/README.md"
+    ]
+  },
+  {
+    "tag": "s",
+    "tagCount": 1,
+    "relativePaths": [
+      "FRONT/front_hawman/node_modules/istanbul-reports/CHANGELOG.md"
+    ]
+  },
+  {
+    "tag": "options",
+    "tagCount": 1,
+    "relativePaths": [
+      "FRONT/front_hawman/node_modules/http-proxy/CHANGELOG.md"
+    ]
+  },
+  {
+    "tag": "all",
+    "tagCount": 4,
+    "relativePaths": [
+      "FRONT/front_hawman/node_modules/flat-cache/changelog.md"
+    ]
+  },
+  {
     "tag": "express",
     "tagCount": 1,
     "relativePaths": [
@@ -7,10 +112,12 @@
     ]
   },
   {
-    "tag": "ff0000",
-    "tagCount": 1,
+    "tag": "setdefaults",
+    "tagCount": 3,
     "relativePaths": [
-      "FRONT/front_hawman/node_modules/chalk/readme.md"
+      "FRONT/front_hawman/node_modules/eslint/node_modules/argparse/CHANGELOG.md",
+      "FRONT/front_hawman/node_modules/argparse/CHANGELOG.md",
+      "FRONT/front_hawman/node_modules/@eslint/eslintrc/node_modules/argparse/CHANGELOG.md"
     ]
   },
   {
@@ -21,10 +128,17 @@
     ]
   },
   {
-    "tag": "setdefaults",
+    "tag": "rollup/658",
     "tagCount": 1,
     "relativePaths": [
-      "FRONT/front_hawman/node_modules/argparse/CHANGELOG.md"
+      "FRONT/front_hawman/node_modules/@rollup/plugin-babel/CHANGELOG.md"
+    ]
+  },
+  {
+    "tag": "__pure__",
+    "tagCount": 1,
+    "relativePaths": [
+      "FRONT/front_hawman/node_modules/@babel/helper-annotate-as-pure/README.md"
     ]
   },
   {
