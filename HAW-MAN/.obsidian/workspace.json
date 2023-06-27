@@ -23,19 +23,28 @@
             "id": "4ade9da32b9b4966",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Conception/document/Use_Case/USE CASE.canvas",
-                "viewState": {
-                  "x": -268,
-                  "y": -530,
-                  "zoom": 0
-                }
+                "file": "Conception/document/MCD/diagramme 📊  UML/Diagramme de conception conceptuelle.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "9333ca108228b3a3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "relations SpringBoot.md",
+                "mode": "source",
+                "source": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -101,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Conception/document/Use_Case/USE CASE.canvas",
+                "file": "relations SpringBoot.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Conception/document/Use_Case/USE CASE.canvas",
+                "file": "relations SpringBoot.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Conception/document/Use_Case/USE CASE.canvas"
+                "file": "relations SpringBoot.md"
               }
             }
           },
@@ -177,19 +186,40 @@
       "obsidian-translator:Translate": false
     }
   },
-  "active": "4ade9da32b9b4966",
+  "active": "9333ca108228b3a3",
   "lastOpenFiles": [
-    "FRONT/front_hawman/node_modules/react-bootstrap/package.json",
-    "FRONT/front_hawman/node_modules/bootstrap/package.json",
-    "FRONT/front_hawman/src/Component/Listing.js",
-    "FRONT/front_hawman/node_modules/@types/react-transition-group/config.d.ts",
-    "FRONT/front_hawman/node_modules/@types/react-transition-group/SwitchTransition.d.ts",
-    "FRONT/front_hawman/node_modules/@types/react-transition-group/TransitionGroup.d.ts",
-    "FRONT/front_hawman/node_modules/@types/react-transition-group/Transition.d.ts",
-    "FRONT/front_hawman/node_modules/@types/react-transition-group/index.d.ts",
-    "FRONT/front_hawman/node_modules/@types/warning/package.json",
-    "FRONT/front_hawman/node_modules/@types/react-transition-group/package.json",
-    "FRONT/front_hawman/node_modules/@remix-run/router/dist/utils.d.ts",
+    "FRONT/front_hawman/src/Component/AddManga.js",
+    "FRONT/front_hawman/src/Component/AddManga",
+    "Conception/Cahier des charges - Projet Hwa-Man.md",
+    "Architecture HWA_MAN.md",
+    "relations SpringBoot.md",
+    "HwaMan Bibliothèque Virtuelle  Readme.md",
+    "BACK/hwaman/hwaman/target/classes/fr/BakaWord/hwaman/Service/MangaService.class",
+    "BACK/hwaman/hwaman/src/main/java/fr/BakaWord/hwaman/Service/MangaService.java",
+    "BACK/hwaman/hwaman/target/classes/fr/BakaWord/hwaman/Repository/MangaRepository.class",
+    "BACK/hwaman/hwaman/src/main/java/fr/BakaWord/hwaman/Repository/MangaRepository.java",
+    "BACK/hwaman/hwaman/target/classes/fr/BakaWord/hwaman/Controller/MangaController.class",
+    "BACK/hwaman/hwaman/src/main/java/fr/BakaWord/hwaman/Controller/MangaController.java",
+    "FRONT/front_hawman/src/Component/ItemAdd.js",
+    "BACK/hwaman/hwaman/target/classes/fr/BakaWord/hwaman/Service/ItemService.class",
+    "BACK/hwaman/hwaman/src/main/java/fr/BakaWord/hwaman/Service/ItemService.java",
+    "Conception/document/MCD/diagramme 📊  UML/Diagramme de conception conceptuelle.md",
+    "Conception/document/MCD/diagramme 📊  UML/Diagramme de composant.md",
+    "Conception/document/MCD/diagramme 📊  UML/Diagramme de communication.md",
+    "Conception/document/MCD/diagramme 📊  UML/Diagramme d'activiter.md",
+    "Conception/document/MCD/assets/MCD_hawman_2023-06-10_01.png",
+    "Conception/document/MCD/assets/hawman_2023-06-12_04.png",
+    "Conception/document/MCD/assets/HAW_MAN_2023_06_09_01.png",
+    "Conception/document/MCD/assets/fab2023-06-13 094951.png",
+    "Conception/document/MCD/assets/CARDINALITER_ 2023-06-12_05.png",
+    "Conception/document/MCD/assets/analyseSI_hawman2023-06-12_08.png",
+    "Conception/document/MCD/assets/uml_hawman_2023-06-12_07.png",
+    "Conception/document/MCD/assets/Spring_hawman_conceptuel 2023-06-10 03.png",
+    "Conception/document/MCD/diagramme 📊  UML/Diagramme de déploiement.md",
+    "Conception/document/Use_Case/Use case.md",
+    "Conception/document/Use_Case/USE CASE.canvas",
+    "Conception/document/Use_Case/hwa-man_use_case action.png",
+    "Conception/document/MCD/assets/MPD_hawman_2023-06-10_03.png",
     "FRONT/front_hawman/node_modules/@remix-run/router/README.md",
     "FRONT/front_hawman/node_modules/@remix-run/router/LICENSE.md",
     "FRONT/front_hawman/node_modules/@remix-run/router/CHANGELOG.md",
@@ -205,27 +235,6 @@
     "FRONT/front_hawman/node_modules/react-router/README.md",
     "FRONT/front_hawman/node_modules/react-router/LICENSE.md",
     "FRONT/front_hawman/node_modules/react-router/CHANGELOG.md",
-    "FRONT/front_hawman/node_modules/react-router-dom/README.md",
-    "FRONT/front_hawman/node_modules/react-router-dom/LICENSE.md",
-    "FRONT/front_hawman/node_modules/react-router-dom/CHANGELOG.md",
-    "FRONT/front_hawman/node_modules/uncontrollable/lib/README.md",
-    "FRONT/front_hawman/node_modules/@react-aria/ssr/README.md",
-    "FRONT/front_hawman/node_modules/react-lifecycles-compat/CHANGELOG.md",
-    "FRONT/front_hawman/node_modules/warning/CHANGELOG.md",
-    "FRONT/front_hawman/node_modules/@popperjs/core/LICENSE.md",
-    "FRONT/front_hawman/node_modules/@types/warning/README.md",
-    "Conception/document/Use_Case/hwa-man_use_case action.png",
-    "Conception/document/Use_Case/USE CASE.canvas",
-    "Conception/document/Use_Case/cas d'utilisation.md",
-    "Conception/document/MCD/assets/MPD_hawman_2023-06-10_03.png",
-    "Conception/document/MCD/assets/Spring_hawman_conceptuel 2023-06-10 03.png",
-    "Conception/document/MCD/assets/uml_hawman_2023-06-12_07.png",
-    "Conception/document/MCD/assets/hawman_2023-06-12_04.png",
-    "Conception/document/MCD/assets/HAW_MAN_2023_06_09_01.png",
-    "Conception/document/MCD/assets/CARDINALITER_ 2023-06-12_05.png",
-    "Conception/document/MCD/assets/analyseSI_hawman2023-06-12_08.png",
-    "Conception/document/MCD/assets/MCD_hawman_2023-06-10_01.png",
-    "Conception/document/MCD/assets/fab2023-06-13 094951.png",
     "document/Use_Case/USE CASE.canvas"
   ]
 }

@@ -17,7 +17,11 @@ import org.springframework.security.core.userdetails.UserDetails;
  *
  */
 public class UserLogin implements UserDetails {
-private User user;
+	private User user;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	
 	public User getUser() {
 		return user;
@@ -28,14 +32,13 @@ private User user;
 	}
 
 	public UserLogin(User user) {
-	this.user = user;
-	}
-	
-	public String getFullName() {
-	return user.getNom() + " " + user.getPrenom();
+		this.user = user;
 	}
 
-	
+	public String getFullName() {
+		return user.getNom() + " " + user.getPrenom();
+	}
+
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		// TODO Auto-generated method stub
@@ -45,8 +48,7 @@ private User user;
 		for (Role role : roles) {
 			authorities.add(new SimpleGrantedAuthority(role.getName()));
 		}
-			return authorities;
-		
+		return authorities;
 
 	}
 
@@ -85,6 +87,5 @@ private User user;
 		// TODO Auto-generated method stub
 		return true;
 	}
-
 
 }

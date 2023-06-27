@@ -32,16 +32,16 @@ public class JwtUtils {
 
 	@Value("${spear.app.jwtSecret}")
 	private String jwtSecret;
-
-	@Value("${spear.app.jwtExpirationMs}")
-	private int jwtExpirationMs;
+//
+//	@Value("${spear.app.jwtExpirationMs}")
+//	private int jwtExpirationMs;
 
 	public String generateJwtToken(Authentication authentication) {
 
 		UserLogin userPrincipal = (UserLogin) authentication.getPrincipal();
 
 		return Jwts.builder().setSubject((userPrincipal.getUsername())).setIssuedAt(new Date())
-				.setExpiration(new Date((new Date()).getTime() + jwtExpirationMs))
+				.setExpiration(new Date((new Date()).getTime() + (60*60*24)))
 				.signWith(key(), SignatureAlgorithm.HS256).compact();
 	}
 

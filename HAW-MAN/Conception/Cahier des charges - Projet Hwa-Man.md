@@ -8,7 +8,7 @@ Projet : Hwa-Man - Bibliothèque virtuelle de mangas avec fonctionnalités de co
 
 Durée du projet : Du 9 juin au 30 juin
 
-Objectif : Créer une application de bibliothèque virtuelle de mangas permettant aux utilisateurs de rechercher des mangas, d'afficher les détails des mangas, de commenter les mangas existants, d'ajouter de nouveaux mangas et de gérer les utilisateurs avec différents groupes et rôles. L'application aura un administrateur général qui aura un contrôle total sur l'ensemble de l'application, des administrateurs-utilisateurs qui pourront gérer les contenus et les utilisateurs, et des utilisateurs avec des rôles d'administrateurs spécifiques qui s'appliqueront uniquement aux groupes auxquels ils sont associés. L'application sera développée en utilisant Spring Boot pour la partie backend et React pour la partie frontend.
+Objectif : Créer une application de bibliothèque virtuelle de mangas permettant aux utilisateurs de rechercher des mangas, d'afficher les détails des mangas, de commenter les mangas existants, d'ajouter de nouveaux mangas et de gérer les utilisateurs avec différents groupes et rôles. L'application aura un administrateur général qui aura un contrôle total sur l'ensemble de l'application, des administrateurs-utilisateurs (Membre) qui pourront gérer les contenus et les utilisateurs, et des utilisateurs avec des rôles d'administrateurs spécifiques qui s'appliqueront uniquement aux groupes auxquels ils sont associés. L'application sera développée en utilisant Spring Boot pour la partie backend et React pour la partie frontend.
 
 ## Fonctionnalités principales
 

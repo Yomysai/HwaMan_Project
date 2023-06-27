@@ -30,13 +30,12 @@ import jakarta.validation.Valid;
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
 public class LoginController {
+	@Autowired
+	AuthenticationManager authenticationManager;
 
-	  @Autowired
-	  AuthenticationManager authenticationManager;
-	  
-	  @Autowired
-	  JwtUtils jwtUtils;
-	  
+	@Autowired
+	JwtUtils jwtUtils;
+
 	@PostMapping("/signin")
 	  public ResponseEntity<?> authenticateUser(@Valid @RequestBody User loginRequest) {
 
@@ -54,6 +53,7 @@ public class LoginController {
 	    return ResponseEntity.ok(new JwtResponse(jwt, 
 	                         userDetails.getUser().getId(), 
 	                         userDetails.getUser().getEmail(), 
+	                         userDetails.getFullName(),
 	                         roles));
 	  }
-}
+	}
