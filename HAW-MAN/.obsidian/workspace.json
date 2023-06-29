@@ -35,11 +35,9 @@
             "id": "9333ca108228b3a3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "relations SpringBoot.md",
-                "mode": "source",
-                "source": true
+                "file": "Conception/document/MCD/assets/HAW_MAN_2023_06_09_01.png"
               }
             }
           }
@@ -110,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "relations SpringBoot.md",
+                "file": "Conception/document/MCD/assets/HAW_MAN_2023_06_09_01.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "relations SpringBoot.md",
+                "file": "Conception/document/MCD/assets/HAW_MAN_2023_06_09_01.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "relations SpringBoot.md"
+                "file": "Conception/document/MCD/assets/HAW_MAN_2023_06_09_01.png"
               }
             }
           },
@@ -186,39 +184,41 @@
       "obsidian-translator:Translate": false
     }
   },
-  "active": "9333ca108228b3a3",
+  "active": "217d7088e72597cb",
   "lastOpenFiles": [
-    "FRONT/front_hawman/src/Component/AddManga.js",
-    "FRONT/front_hawman/src/Component/AddManga",
-    "Conception/Cahier des charges - Projet Hwa-Man.md",
-    "Architecture HWA_MAN.md",
-    "relations SpringBoot.md",
-    "HwaMan Bibliothèque Virtuelle  Readme.md",
-    "BACK/hwaman/hwaman/target/classes/fr/BakaWord/hwaman/Service/MangaService.class",
-    "BACK/hwaman/hwaman/src/main/java/fr/BakaWord/hwaman/Service/MangaService.java",
-    "BACK/hwaman/hwaman/target/classes/fr/BakaWord/hwaman/Repository/MangaRepository.class",
-    "BACK/hwaman/hwaman/src/main/java/fr/BakaWord/hwaman/Repository/MangaRepository.java",
-    "BACK/hwaman/hwaman/target/classes/fr/BakaWord/hwaman/Controller/MangaController.class",
-    "BACK/hwaman/hwaman/src/main/java/fr/BakaWord/hwaman/Controller/MangaController.java",
-    "FRONT/front_hawman/src/Component/ItemAdd.js",
-    "BACK/hwaman/hwaman/target/classes/fr/BakaWord/hwaman/Service/ItemService.class",
-    "BACK/hwaman/hwaman/src/main/java/fr/BakaWord/hwaman/Service/ItemService.java",
-    "Conception/document/MCD/diagramme 📊  UML/Diagramme de conception conceptuelle.md",
+    "FRONT/front_hawman/node_modules/@restart/ui/useWaitForDOMRef/package.json",
+    "FRONT/front_hawman/node_modules/@restart/ui/useWaitForDOMRef",
+    "FRONT/front_hawman/node_modules/react-bootstrap/ToggleButton/package.json",
+    "FRONT/front_hawman/node_modules/react-bootstrap/ToggleButton",
+    "FRONT/front_hawman/node_modules/react-bootstrap/ToastHeader/package.json",
+    "FRONT/front_hawman/node_modules/react-bootstrap/ToastHeader",
+    "FRONT/front_hawman/node_modules/react-bootstrap/ToastFade/package.json",
+    "FRONT/front_hawman/node_modules/react-bootstrap/ToastFade",
+    "FRONT/front_hawman/node_modules/react-bootstrap/ToastContext/package.json",
+    "FRONT/front_hawman/node_modules/react-bootstrap/ToastContext",
+    "FRONT/front_hawman/node_modules/react-bootstrap/ToastContainer/package.json",
+    "Conception/document/MCD/assets/fab2023-06-13 094951.png",
+    "Conception/document/MCD/assets/hawman_2023-06-12_04.png",
+    "Conception/document/MCD/assets/Spring_hawman_conceptuel 2023-06-10 03.png",
+    "Conception/document/MCD/assets/uml_hawman_2023-06-12_07.png",
+    "Conception/document/Use_Case/cas d'utilisation.md",
+    "Conception/document/Use_Case/hwa-man_use_case action.png",
+    "Conception/document/MCD/assets/HAW_MAN_2023_06_09_01.png",
+    "Conception/document/MCD/assets/CARDINALITER_ 2023-06-12_05.png",
+    "Conception/document/MCD/assets/analyseSI_hawman2023-06-12_08.png",
+    "Conception/document/MCD/diagramme 📊  UML/Diagramme de déploiement.md",
     "Conception/document/MCD/diagramme 📊  UML/Diagramme de composant.md",
     "Conception/document/MCD/diagramme 📊  UML/Diagramme de communication.md",
     "Conception/document/MCD/diagramme 📊  UML/Diagramme d'activiter.md",
+    "Conception/Cahier des charges - Projet Hwa-Man.md",
+    "Architecture HWA_MAN.md",
+    "HwaMan Bibliothèque Virtuelle  Readme.md",
+    "Conception/document/Conseil/RESSOURCES DE BASE d/RÉFLEXION/Cahier des charges ancient.md",
+    "relations SpringBoot.md",
+    "Conception/document/MCD/diagramme 📊  UML/Diagramme de conception conceptuelle.md",
     "Conception/document/MCD/assets/MCD_hawman_2023-06-10_01.png",
-    "Conception/document/MCD/assets/hawman_2023-06-12_04.png",
-    "Conception/document/MCD/assets/HAW_MAN_2023_06_09_01.png",
-    "Conception/document/MCD/assets/fab2023-06-13 094951.png",
-    "Conception/document/MCD/assets/CARDINALITER_ 2023-06-12_05.png",
-    "Conception/document/MCD/assets/analyseSI_hawman2023-06-12_08.png",
-    "Conception/document/MCD/assets/uml_hawman_2023-06-12_07.png",
-    "Conception/document/MCD/assets/Spring_hawman_conceptuel 2023-06-10 03.png",
-    "Conception/document/MCD/diagramme 📊  UML/Diagramme de déploiement.md",
     "Conception/document/Use_Case/Use case.md",
     "Conception/document/Use_Case/USE CASE.canvas",
-    "Conception/document/Use_Case/hwa-man_use_case action.png",
     "Conception/document/MCD/assets/MPD_hawman_2023-06-10_03.png",
     "FRONT/front_hawman/node_modules/@remix-run/router/README.md",
     "FRONT/front_hawman/node_modules/@remix-run/router/LICENSE.md",
@@ -233,8 +233,6 @@
     "FRONT/front_hawman/node_modules/axios/lib/adapters/README.md",
     "FRONT/front_hawman/node_modules/proxy-from-env/README.md",
     "FRONT/front_hawman/node_modules/react-router/README.md",
-    "FRONT/front_hawman/node_modules/react-router/LICENSE.md",
-    "FRONT/front_hawman/node_modules/react-router/CHANGELOG.md",
     "document/Use_Case/USE CASE.canvas"
   ]
 }
