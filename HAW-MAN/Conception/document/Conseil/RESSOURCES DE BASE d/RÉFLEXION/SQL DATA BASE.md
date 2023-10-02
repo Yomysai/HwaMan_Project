@@ -125,3 +125,39 @@ Table "MangaGenres" (genres des mangas) :
 
 
 voire: [[Script]]
+
+
+
+
+{
+  "date_naissance": "1990-01-15",
+  "email": "utilisateur@example.com",
+  "nom": "Doe",
+  "password": "mot_de_passe_secret",
+  "prenom": "John",
+  "ville": "Villeville",
+  "id_role": 2
+}
+{
+
+  "date_naissance": "1990-01-15",
+
+  "email": "utilisateur@example.com",
+
+  "nom": "Doe",
+
+  "password": "mot_de_passe_secret",
+
+  "prenom": "John",
+
+  "ville": "Villeville",
+
+  "role": {
+
+    "id": 2,
+
+    "nom": "Monderator"
+
+  }
+
+}

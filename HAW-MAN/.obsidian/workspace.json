@@ -35,9 +35,11 @@
             "id": "9333ca108228b3a3",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Conception/document/MCD/assets/HAW_MAN_2023_06_09_01.png"
+                "file": "Conception/document/Conseil/RESSOURCES DE BASE d/RÉFLEXION/SQL DATA BASE.md",
+                "mode": "source",
+                "source": true
               }
             }
           }
@@ -108,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Conception/document/MCD/assets/HAW_MAN_2023_06_09_01.png",
+                "file": "Conception/document/Conseil/RESSOURCES DE BASE d/RÉFLEXION/SQL DATA BASE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Conception/document/MCD/assets/HAW_MAN_2023_06_09_01.png",
+                "file": "Conception/document/Conseil/RESSOURCES DE BASE d/RÉFLEXION/SQL DATA BASE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Conception/document/MCD/assets/HAW_MAN_2023_06_09_01.png"
+                "file": "Conception/document/Conseil/RESSOURCES DE BASE d/RÉFLEXION/SQL DATA BASE.md"
               }
             }
           },
@@ -184,39 +186,40 @@
       "obsidian-translator:Translate": false
     }
   },
-  "active": "217d7088e72597cb",
+  "active": "9333ca108228b3a3",
   "lastOpenFiles": [
-    "FRONT/front_hawman/node_modules/@restart/ui/useWaitForDOMRef/package.json",
-    "FRONT/front_hawman/node_modules/@restart/ui/useWaitForDOMRef",
-    "FRONT/front_hawman/node_modules/react-bootstrap/ToggleButton/package.json",
-    "FRONT/front_hawman/node_modules/react-bootstrap/ToggleButton",
-    "FRONT/front_hawman/node_modules/react-bootstrap/ToastHeader/package.json",
-    "FRONT/front_hawman/node_modules/react-bootstrap/ToastHeader",
-    "FRONT/front_hawman/node_modules/react-bootstrap/ToastFade/package.json",
-    "FRONT/front_hawman/node_modules/react-bootstrap/ToastFade",
-    "FRONT/front_hawman/node_modules/react-bootstrap/ToastContext/package.json",
-    "FRONT/front_hawman/node_modules/react-bootstrap/ToastContext",
-    "FRONT/front_hawman/node_modules/react-bootstrap/ToastContainer/package.json",
+    "Conception/document/Conseil/RESSOURCES DE BASE d/Diagramme de conception conceptuelle.md",
+    "HwaMan Bibliothèque Virtuelle  Readme.md",
+    "BACK/hwaman/hwaman/target/classes/META-INF/maven/fr.BakaWord/hwaman/pom.xml",
+    "BACK/hwaman/hwaman/target/classes/META-INF/maven/fr.BakaWord/hwaman/pom.properties",
+    "BACK/hwaman/hwaman/target/classes/META-INF/maven/fr.BakaWord/hwaman",
+    "BACK/hwaman/hwaman/target/classes/META-INF/maven/fr.BakaWord",
+    "BACK/hwaman/hwaman/target/classes/META-INF/maven",
+    "BACK/hwaman/hwaman/target/classes/META-INF/MANIFEST.MF",
+    "BACK/hwaman/hwaman/target/classes/META-INF",
+    "BACK/hwaman/hwaman/target/classes/application.properties",
+    "BACK/hwaman/hwaman/target/classes/fr/BakaWord/hwaman/Bean/UserLogin.class",
+    "Conception/document/MCD/assets/MCD_hawman_2023-06-10_01.png",
     "Conception/document/MCD/assets/fab2023-06-13 094951.png",
+    "Conception/document/MCD/assets/CARDINALITER_ 2023-06-12_05.png",
+    "Conception/document/MCD/assets/analyseSI_hawman2023-06-12_08.png",
+    "Conception/document/MCD/diagramme 📊  UML/Diagramme de sequence.md",
+    "Conception/document/MCD/diagramme 📊  UML/Diagramme de conception conceptuelle.md",
+    "Conception/document/MCD/diagramme 📊  UML/Diagramme de composant.md",
+    "Conception/document/MCD/diagramme 📊  UML/Diagramme d'activiter.md",
+    "Conception/document/MCD/diagramme 📊  UML/Diagramme de communication.md",
+    "Conception/document/MCD/assets/HAW_MAN_2023_06_09_01.png",
+    "Conception/document/Use_Case/userCAse_04.1_verifier_final.zargo#",
     "Conception/document/MCD/assets/hawman_2023-06-12_04.png",
     "Conception/document/MCD/assets/Spring_hawman_conceptuel 2023-06-10 03.png",
     "Conception/document/MCD/assets/uml_hawman_2023-06-12_07.png",
     "Conception/document/Use_Case/cas d'utilisation.md",
     "Conception/document/Use_Case/hwa-man_use_case action.png",
-    "Conception/document/MCD/assets/HAW_MAN_2023_06_09_01.png",
-    "Conception/document/MCD/assets/CARDINALITER_ 2023-06-12_05.png",
-    "Conception/document/MCD/assets/analyseSI_hawman2023-06-12_08.png",
     "Conception/document/MCD/diagramme 📊  UML/Diagramme de déploiement.md",
-    "Conception/document/MCD/diagramme 📊  UML/Diagramme de composant.md",
-    "Conception/document/MCD/diagramme 📊  UML/Diagramme de communication.md",
-    "Conception/document/MCD/diagramme 📊  UML/Diagramme d'activiter.md",
     "Conception/Cahier des charges - Projet Hwa-Man.md",
     "Architecture HWA_MAN.md",
-    "HwaMan Bibliothèque Virtuelle  Readme.md",
     "Conception/document/Conseil/RESSOURCES DE BASE d/RÉFLEXION/Cahier des charges ancient.md",
     "relations SpringBoot.md",
-    "Conception/document/MCD/diagramme 📊  UML/Diagramme de conception conceptuelle.md",
-    "Conception/document/MCD/assets/MCD_hawman_2023-06-10_01.png",
     "Conception/document/Use_Case/Use case.md",
     "Conception/document/Use_Case/USE CASE.canvas",
     "Conception/document/MCD/assets/MPD_hawman_2023-06-10_03.png",
@@ -232,7 +235,6 @@
     "FRONT/front_hawman/node_modules/axios/lib/core/README.md",
     "FRONT/front_hawman/node_modules/axios/lib/adapters/README.md",
     "FRONT/front_hawman/node_modules/proxy-from-env/README.md",
-    "FRONT/front_hawman/node_modules/react-router/README.md",
     "document/Use_Case/USE CASE.canvas"
   ]
 }

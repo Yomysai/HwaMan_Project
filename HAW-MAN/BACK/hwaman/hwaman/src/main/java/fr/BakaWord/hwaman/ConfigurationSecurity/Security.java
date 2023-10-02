@@ -67,10 +67,10 @@ public class Security {
 				.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 				.authorizeHttpRequests(auth -> 
 				auth
-				.requestMatchers("/**").hasAnyAuthority("USER","MEMBRE","ADMIN")
-				.requestMatchers("/listing").hasAnyRole("USER", "ADMIN")
-				.requestMatchers("/api/admin/**").hasRole("ADMIN")
-				//.requestMatchers("/**").permitAll()
+//				.requestMatchers("/**").hasAnyAuthority("USER","MEMBRE","ADMIN")
+//				.requestMatchers("/listing").hasAnyRole("USER", "ADMIN")
+//				.requestMatchers("/api/admin/**").hasRole("ADMIN")
+				.requestMatchers("/**").permitAll()
 				.anyRequest().authenticated()
 						
 

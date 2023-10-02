@@ -3,8 +3,8 @@
     "tag": "webpack",
     "tagCount": 4,
     "relativePaths": [
-      "FRONT/front_hawman/node_modules/webpack-dev-middleware/README.md",
       "FRONT/front_hawman/node_modules/webpack-dev-server/README.md",
+      "FRONT/front_hawman/node_modules/webpack-dev-middleware/README.md",
       "FRONT/front_hawman/node_modules/webpack/README.md"
     ]
   },
@@ -52,8 +52,8 @@
       "FRONT/front_hawman/node_modules/chalk/readme.md",
       "FRONT/front_hawman/node_modules/babel-jest/node_modules/chalk/readme.md",
       "FRONT/front_hawman/node_modules/@types/jest/node_modules/chalk/readme.md",
-      "FRONT/front_hawman/node_modules/@testing-library/jest-dom/node_modules/chalk/readme.md",
       "FRONT/front_hawman/node_modules/@testing-library/react/node_modules/chalk/readme.md",
+      "FRONT/front_hawman/node_modules/@testing-library/jest-dom/node_modules/chalk/readme.md",
       "FRONT/front_hawman/node_modules/@testing-library/dom/node_modules/chalk/readme.md",
       "FRONT/front_hawman/node_modules/@jest/types/node_modules/chalk/readme.md",
       "FRONT/front_hawman/node_modules/@jest/transform/node_modules/chalk/readme.md",
